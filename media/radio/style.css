@@ -1,0 +1,17 @@
+/* CSS Document */
+
+body {
+  height: 100%;
+  width: 100%;
+  background:url(https://crowsnest.me/img/marathon/Marathon%20%20Official%20Announce%20Trailer-00.00.22.277.webp) no-repeat center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+video {
+    position: fixed;
+    left: calc(50vw - 125px);
+    top:  calc(50vh - 125px);
+    box-shadow: 0 0 20px black;
+}

@@ -1,0 +1,19 @@
+<label for="puzzle_select_dropdown">Puzzle Selection</label>
+<br/>
+<select id="puzzle_select_dropdown" onChange="swapImage()">
+    <option value = "1">Heart Room (First Encounter)</option>
+    <option value = "2">Post Servitor Maze</option>
+    <option value = "3">Post Second Jumping Puzzle (half-way through)</option>
+</select>
+<br/>
+
+<label for="natarget_input_fieldme">Target Value</label>
+<br/>
+<input type="number" id="target_input_field" name="target_input_field" required min="10" max="999" onInput="solve();" />
+<br/>
+<!--- <button onClick="solve();">Solve!</button>
+<br/> --->
+<label>Result</label>
+<br/>
+<div class="output" id="result_output_field">X | X | X | X<br/></div>
+<div id="image_display_field"><img src="img/vesper_puzzle_1.webp" alt="image of currently selected encounter"></div>
