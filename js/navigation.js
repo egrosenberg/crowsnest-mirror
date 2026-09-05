@@ -29,7 +29,7 @@ const deafault_head_template = "/templates/index_head.html";
 const locationHandler = async () => {
     let location = window.location.pathname; // get the url path
     let prefix = '';
-    if (location.startsWith('crowsnest-mirror/') {
+    if (location.startsWith('crowsnest-mirror/')) {
         prefix = 'crowsnest-mirror/';
         location = location.slice(17);
     }
