@@ -28,6 +28,11 @@ const deafault_head_template = "/templates/index_head.html";
 //function to handle url location
 const locationHandler = async () => {
     let location = window.location.pathname; // get the url path
+    let prefix = '';
+    if (location.startsWith('crowsnest-mirror/') {
+        prefix = 'crowsnest-mirror/';
+        location = location.slice(17);
+    }
     // if the path length is 0, set it to primary page route
     if (location.length == 0) {
         location = "/";
@@ -38,7 +43,7 @@ const locationHandler = async () => {
     // check for 404
     if (typeof route === 'undefined')
     {
-        window.location.replace("/404.html");
+        window.location.replace(prefix + "/404.html");
         return;
     }
     
